@@ -1,6 +1,16 @@
 Emacs Prelude's jwintz fork
 ===========================
 
+> Emacs is probably the best text editor in the world. However, the
+process of coming up with a useful Emacs configuration is long and
+difficult. It's this process that separates you from truly taking
+advantage of Emacs's power. I like to refer to this process as the
+**Prelude**. **Emacs Prelude** has the goal to ease the initial Emacs
+setup process and to provide you with a much more powerful and
+productive experience than the one you get out of the box. By using
+**Emacs Prelude** you're basically getting a *"Get me out of the
+Prelude, I just want to use Emacs"* card.
+
 ## Credits
 
 Prelude is an amazing emacs configuration system developed by Bozhidar Ivanov Batsov. See http://batsov.com/prelude/.
