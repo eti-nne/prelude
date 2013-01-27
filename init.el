@@ -56,6 +56,8 @@ ELPA (or MELPA).")
   "This folder stores all the automatically generated save/history-files.")
 (defvar prelude-modules-file (expand-file-name "prelude-modules.el" prelude-dir)
   "This files contains a list of modules that will be loaded by Prelude.")
+(defvar prelude-themes-dir (expand-file-name "themes" prelude-dir)
+  "This folder houses additional themes distributed with Prelude.")
 
 (unless (file-exists-p prelude-savefile-dir)
   (make-directory prelude-savefile-dir))
@@ -75,6 +77,7 @@ Emacs load path."
 (add-to-list 'load-path prelude-modules-dir)
 (add-to-list 'load-path prelude-vendor-dir)
 (prelude-add-subfolders-to-load-path prelude-vendor-dir)
+(add-to-list 'custom-theme-load-path prelude-themes-dir)
 
 (require 'dash)
 
