@@ -14,6 +14,10 @@
 
 (ido-mode 0)
 
+;; Disable electric pairing
+
+(electric-pair-mode 0)
+
 ;; Swap meta and super on mac
 
 (when (eq system-type 'darwin)

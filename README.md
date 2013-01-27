@@ -45,6 +45,7 @@ following:
 - disable prelude-flyspell
 - disable prelude-guru
 - disable ido
+- disable electric pairing
 - swap meta and super on darwin
 
 ## Additional modules
