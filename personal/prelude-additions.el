@@ -1,6 +1,6 @@
 ;; CMake mode
 
-(require 'cmake-mode)
+(require 'prelude-cmake)
 (setq auto-mode-alist
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
                 ("\\.cmake\\'" . cmake-mode))
