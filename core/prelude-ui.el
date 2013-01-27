@@ -94,8 +94,8 @@
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
-;; use zenburn as the default theme
-(load-theme 'zenburn t)
+;; use solarized as the default theme
+(load-theme 'solarized-dark t)
 
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here

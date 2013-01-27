@@ -22,7 +22,3 @@
 ;; Disable flyspell
 
 (flyspell-mode -1)
-
-;; Default theme is solarized
-
-(load-theme 'solarized t)
