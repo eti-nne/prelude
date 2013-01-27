@@ -54,4 +54,9 @@ following:
 
 ### Additional bindings
 
-- C-c z: 'ff-find-other-file
+- `C-c z`: 'ff-find-other-file
+- `C-x C-h m`: 'make-header
+- `C-x C-h c`: 'make-box-comment
+- `C-x C-h d`: 'make-divider
+- `C-x C-h r`: 'make-revision
+- `C-x C-h g`: 'update-file-header

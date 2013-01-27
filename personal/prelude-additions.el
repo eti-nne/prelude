@@ -16,6 +16,7 @@
                          header-update-count
                          header-end-line
                          header-history
+                         header-blank
                          header-end-line
                          ))
 
