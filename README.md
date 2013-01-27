@@ -51,6 +51,7 @@ following:
 ## Additional modules
 
 - modules/prelude-cmake provides cmake-mode
+- modules/prelude-ninja provides ninja-mode
 
 ### Additional bindings
 
