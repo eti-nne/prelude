@@ -1,12 +1,10 @@
 ;; File header
 
-(setq header-copyright-notice "Copyright © Julien Wintz\n")
 (setq header-author 'user-full-name)
 (setq header-file-name 'buffer-file-name)
 (setq header-creation-date 'current-time-string)
 (setq header-modification-author 'user-full-name)
-(setq make-header-hook '(
-                         header-title
+(setq make-header-hook '(header-title
                          header-blank
                          header-author
                          header-creation-date
@@ -17,8 +15,7 @@
                          header-end-line
                          header-history
                          header-blank
-                         header-end-line
-                         ))
+                         header-end-line))
 
 (define-key global-map "\C-x\C-hm" 'make-header)
 (define-key global-map "\C-x\C-hc" 'make-box-comment)
