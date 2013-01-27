@@ -94,10 +94,9 @@
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
-;; use solarized as the default theme
-
-(when (display-graphic-p)
-  (load-theme 'solarized-light t))
+;; ;; use tango as the default theme
+;; (when (display-graphic-p)
+;;  (load-theme 'tango t))
 
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here

@@ -26,7 +26,9 @@ You can now power up your Emacs, sit back and enjoy Prelude. Everything will be 
 
 ## Changes
 
-The default theme has been changed to solarized-light.
+- init.el: Add prelude-themes-dir and add it to custom theme load path.
+- core/prelude-packages.el: themes have been removed from package list.
+- core/prelude-ui.el: prevent prelude from loading default theme.
 
 ## Overrides
 
@@ -53,3 +55,7 @@ following:
 - `C-x C-h d`: 'make-divider
 - `C-x C-h r`: 'make-revision
 - `C-x C-h g`: 'update-file-header
+
+## Additional themes
+
+- themes/jwintz-theme.el: my very own form of wombat
