@@ -85,6 +85,7 @@ Emacs load path."
 (require 'prelude-mode)
 (require 'prelude-editor)
 (require 'prelude-global-keybindings)
+(require 'prelude-header)
 
 ;; OSX specific settings
 (when (eq system-type 'darwin)
