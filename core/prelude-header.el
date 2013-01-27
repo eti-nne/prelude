@@ -10,9 +10,9 @@
 ;; Copyright (C) 1988 Lynn Randolph Slater, Jr.
 ;; Created: Tue Aug  4 17:06:46 1987
 ;; Version: 21.0
-;; Last-Updated: Sun Jan 27 19:29:18 2013 (+0100)
+;; Last-Updated: Sun Jan 27 19:51:37 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 1828
+;;     Update #: 1835
 ;; URL: http://www.emacswiki.org/header2.el
 ;; Doc URL: http://emacswiki.org/AutomaticFileHeaders
 ;; Keywords: tools, docs, maint, abbrev, local
@@ -910,8 +910,8 @@ END-COL is the last column of the divider line."
   (interactive)
   (insert comment-start)
   (when (= 1 (length comment-start)) (insert comment-start))
-  (insert (make-string (max 2 (- (or end-col fill-column)
-                                 (length comment-end) 2 (current-column)))
+  (unless (char-equal (preceding-char) ? ) (insert ? ))
+  (insert (make-string (max 2 (- (or end-col fill-column) (length comment-end) 0 (current-column)))
                        (aref comment-start
                              (if (= 1 (length comment-start)) 0 1))))
   (insert (concat comment-end "\n")))
@@ -926,14 +926,14 @@ END-COL is the last column of the divider line."
   (when (= 1 (length comment-start)) (insert comment-start))
   (unless (char-equal (preceding-char) ? ) (insert ? ))
   (insert (make-string (max 2 (- (or end-col fill-column ) (length comment-end)
-                                 2 (current-column)))
+                                 0 (current-column)))
                        (aref comment-start
                              (if (= 1 (length comment-start)) 0 1))))
   (insert "\n" (header-prefix-string) )
   (save-excursion
     (insert "\n" (header-prefix-string)
             (make-string (max 2 (- (or end-col fill-column)
-                                   (length comment-end) 2 (current-column)))
+                                   (length comment-end) 0 (current-column)))
                          (aref comment-start
                                (if (= 1 (length comment-start)) 0 1)))
             comment-end "\n")))

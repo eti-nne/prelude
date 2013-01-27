@@ -6,24 +6,18 @@
 (setq header-creation-date 'current-time-string)
 (setq header-modification-author 'user-full-name)
 (setq make-header-hook '(
-;;                        header-title
-;;                        header-copyright
-;;                        header-blank
-;;                        header-file-name
-;;                        header-description
-;;                        header-author
-;;                        header-modification-author
-;;                        header-creation-date
-;;                        header-modification-date
-;;                        header-version
-;;                        header-update-count
-;;                        header-history
-;;                        header-blank
-;;                        header-blank
-;;                        header-end-line
-;;                        header-blank
-;;                        header-eof
-                        ))
+                         header-title
+                         header-blank
+                         header-author
+                         header-creation-date
+                         header-version
+                         header-modification-date
+                         header-modification-author
+                         header-update-count
+                         header-end-line
+                         header-history
+                         header-end-line
+                         ))
 
 (define-key global-map "\C-x\C-hm" 'make-header)
 (define-key global-map "\C-x\C-hc" 'make-box-comment)
