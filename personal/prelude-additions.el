@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version: 
-;; Last-Updated: Sun Jan 27 23:05:50 2013 (+0100)
+;; Last-Updated: Sun Jan 27 23:32:52 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 13
+;;     Update #: 15
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
 ;;; Change Log:
@@ -60,4 +60,5 @@
 ;; Theming
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load-theme 'jwintz t)
+(when (display-graphic-p)
+  (load-theme 'jwintz t))
