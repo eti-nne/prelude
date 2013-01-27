@@ -1,3 +1,7 @@
+;; C basic offset
+
+(setq-default c-basic-offset 4)
+
 ;; CMake mode
 
 (setq auto-mode-alist
