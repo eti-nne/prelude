@@ -95,7 +95,9 @@
                                           "%b"))))
 
 ;; use solarized as the default theme
-(load-theme 'solarized-dark t)
+
+(when (display-graphic-p)
+  (load-theme 'solarized-light t))
 
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here
