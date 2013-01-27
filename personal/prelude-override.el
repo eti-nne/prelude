@@ -18,3 +18,7 @@
 ;; Disable ido-mode
 
 (ido-mode 0)
+
+;; Disable flyspell
+
+(flyspell-mode -1)
