@@ -14,10 +14,6 @@
 
 (ido-mode 0)
 
-;; Disable flyspell
-
-(flyspell-mode -1)
-
 ;; Swap meta and super on mac
 
 (when (eq system-type 'darwin)

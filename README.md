@@ -32,6 +32,25 @@ $ curl -L https://github.com/jwintz/prelude/raw/master/utils/installer.sh | sh
 
 You can now power up your Emacs, sit back and enjoy Prelude. Everything will be installed into ~/.emacs.d.
 
-## Additions
+## Changes
 
-- CMake mode
+The default theme has been changed to solarized-light.
+
+## Overrides
+
+personal/prelude-override.el tweaks the default prelude setup with the
+following:
+
+- disable prelude-whitespace
+- disable prelude-flyspell
+- disable prelude-guru
+- disable ido
+- swap meta and super on darwin
+
+## Additional modules
+
+- modules/prelude-cmake provides cmake-mode
+
+### Additional bindings
+
+- C-c z: 'ff-find-other-file

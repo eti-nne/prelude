@@ -4,3 +4,7 @@
       (append '(("CMakeLists\\.txt\\'" . cmake-mode)
                 ("\\.cmake\\'" . cmake-mode))
               auto-mode-alist))
+
+;; Find other file
+
+(global-set-key (kbd "C-c z") 'ff-find-other-file)
