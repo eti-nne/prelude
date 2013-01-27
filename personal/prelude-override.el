@@ -17,3 +17,8 @@
 ;; Disable flyspell
 
 (flyspell-mode -1)
+
+;; Swap meta and super on mac
+
+(when (eq system-type 'darwin)
+  (prelude-swap-meta-and-super))
