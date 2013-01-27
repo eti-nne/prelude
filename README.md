@@ -1,5 +1,5 @@
-Emacs Prelude's jwintz fork
-===========================
+Emacs Prelude
+=============
 
 > Emacs is probably the best text editor in the world. However, the
 process of coming up with a useful Emacs configuration is long and
@@ -31,3 +31,7 @@ $ curl -L https://github.com/jwintz/prelude/raw/master/utils/installer.sh | sh
 ```
 
 You can now power up your Emacs, sit back and enjoy Prelude. Everything will be installed into ~/.emacs.d.
+
+## Additions
+
+- CMake mode
