@@ -1,8 +1,3 @@
-;; Helper functions
-
-(defun disable-guru-mode ()
-  (guru-mode -1))
-
 ;; Disable prelude whitespaces
 
 (setq prelude-whitespace nil)
@@ -13,7 +8,7 @@
 
 ;; Disable prelude guru mode
 
-(add-hook 'prelude-prog-mode-hook 'disable-guru-mode t)
+(setq prelude-guru nil)
 
 ;; Disable ido-mode
 
