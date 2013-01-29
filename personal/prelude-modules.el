@@ -7,6 +7,7 @@
 (require 'prelude-org)
 (require 'prelude-perl)
 (require 'prelude-python)
+(require 'prelude-qml)
 (require 'prelude-ruby)
 (require 'prelude-scss)
 (require 'prelude-xml)
