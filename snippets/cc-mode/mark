@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: mark
+# key: mark
+# --
+#pragma mark -
+#pragma $1
+
+$0
