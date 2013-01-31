@@ -1,5 +1,5 @@
-Emacs Prelude
-=============
+>Emacs Prelude
+==============
 
 > Emacs is probably the best text editor in the world. However, the
 process of coming up with a useful Emacs configuration is long and
@@ -46,6 +46,7 @@ following:
 
 - modules/prelude-cmake provides cmake-mode
 - modules/prelude-ninja provides ninja-mode
+- modules/prelude-qml   privdes    qml-mode
 
 ## Additional bindings
 
@@ -58,4 +59,4 @@ following:
 
 ## Additional themes
 
-- themes/jwintz-theme.el: my very own form of wombat
+- themes/jwintz-theme.el: my very own fork of wombat
