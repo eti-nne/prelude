@@ -42,6 +42,10 @@ following:
 - disable electric pairing
 - swap meta and super on darwin
 
+## Additional packages
+
+- core/prelude-header.el
+
 ## Additional modules
 
 - modules/prelude-cmake provides cmake-mode

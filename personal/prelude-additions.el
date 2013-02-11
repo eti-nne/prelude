@@ -1,15 +1,15 @@
-;;; prelude-additions.el --- 
-;; 
+;;; prelude-additions.el ---
+;;
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
-;; Version: 
-;; Last-Updated: Tue Jan 29 22:23:43 2013 (+0100)
+;; Version:
+;; Last-Updated: Mon Feb 11 14:47:11 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 22
+;;     Update #: 36
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Change Log:
-;; 
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -63,6 +63,7 @@
 (font-lock-add-keywords 'c-mode '(("\\<\\(Q_OBJECT\\|Q_INVOKABLE\\|public slots\\|public signals\\|private slots\\|private signals\\|protected slots\\|protected signals\\)\\>" . font-lock-constant-face)))
 
 (font-lock-add-keywords 'c++-mode '(("\\<\\(Q_OBJECT\\|Q_INVOKABLE)\\>" . font-lock-constant-face)))
+
 (font-lock-add-keywords 'c++-mode '(("\\<\\(public slots\\|public signals\\|private slots\\|private signals\\|protected slots\\|protected signals\\|signals\\)\\>" . font-lock-keyword-face)))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -70,7 +71,7 @@
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (when (display-graphic-p)
-  (load-theme 'jwintz t))
+ (load-theme 'zenburn t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Shell PATH setup

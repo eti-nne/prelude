@@ -94,9 +94,5 @@
                                             (abbreviate-file-name (buffer-file-name))
                                           "%b"))))
 
-;; ;; use tango as the default theme
-;; (when (display-graphic-p)
-;;  (load-theme 'tango t))
-
 (provide 'prelude-ui)
 ;;; prelude-ui.el ends here
