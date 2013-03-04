@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Mon Mar  4 09:20:41 2013 (+0100)
+;; Last-Updated: Mon Mar  4 10:01:02 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 41
+;;     Update #: 42
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -60,8 +60,8 @@
 ;; Theming
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (when (display-graphic-p)
-;;  (load-theme 'zenburn t))
+(when (display-graphic-p)
+ (load-theme 'tango t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Shell PATH setup
