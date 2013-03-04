@@ -10,9 +10,9 @@
 ;; Copyright (C) 1988 Lynn Randolph Slater, Jr.
 ;; Created: Tue Aug  4 17:06:46 1987
 ;; Version: 21.0
-;; Last-Updated: Sun Jan 27 19:51:37 2013 (+0100)
+;; Last-Updated: Mon Mar  4 09:23:33 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 1835
+;;     Update #: 1836
 ;; URL: http://www.emacswiki.org/header2.el
 ;; Doc URL: http://emacswiki.org/AutomaticFileHeaders
 ;; Keywords: tools, docs, maint, abbrev, local
@@ -343,7 +343,7 @@
 (defvar comment-start-p)
 (defvar c-style)
 (defvar explicit-shell-file-name)
- 
+
 ;; User Options (Variables) --------------------------------
 
 (defgroup Automatic-File-Header nil
@@ -468,7 +468,7 @@ Floor, Boston, MA 02110-1301, USA."
 
   "*Text saying that this is free software"
   :type 'string :group 'Automatic-File-Header)
- 
+
 ;;; Internal variables -------------------------------------
 
 (defvar header-auto-update-enabled t
@@ -493,7 +493,7 @@ the function to call if the string is found near the start of the file.")
 
 (defvar header-prefix-string ""
   "Mode-specific comment prefix string for use in headers.")
- 
+
 ;;; Functions ----------------------------------------------
 
 (defsubst header-blank ()
@@ -516,7 +516,7 @@ packages."
                   (if (buffer-file-name)
                       (file-name-nondirectory (buffer-file-name))
                     (buffer-name))
-                  " --- " "\n"))
+                  " ---" "\n"))
   (setq return-to  (1- (point))))
 
 (defsubst header-file-name ()
@@ -968,7 +968,7 @@ the strings that cause them to be invoked."
 (defun auto-update-file-header ()
   "Update file header if file is modified.
 Call `update-file-header' if:
- `header-auto-update-enabled' is non-nil, 
+ `header-auto-update-enabled' is non-nil,
  the file is modified,
  it is longer than 100 chars,
  and the buffer is not read-only.

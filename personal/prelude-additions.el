@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Mon Feb 11 19:17:49 2013 (+0100)
+;; Last-Updated: Mon Mar  4 09:20:41 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 39
+;;     Update #: 41
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -57,21 +57,11 @@
               auto-mode-alist))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Qt mode
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; (font-lock-add-keywords 'c-mode '(("\\<\\(Q_OBJECT\\|Q_INVOKABLE\\|public slots\\|public signals\\|private slots\\|private signals\\|protected slots\\|protected signals\\)\\>" . font-lock-constant-face)))
-
-;; (font-lock-add-keywords 'c++-mode '(("\\<\\(Q_OBJECT\\|Q_INVOKABLE)\\>" . font-lock-constant-face)))
-
-;; (font-lock-add-keywords 'c++-mode '(("\\<\\(public slots\\|public signals\\|private slots\\|private signals\\|protected slots\\|protected signals\\|signals\\)\\>" . font-lock-keyword-face)))
-
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Theming
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(when (display-graphic-p)
- (load-theme 'zenburn t))
+;; (when (display-graphic-p)
+;;  (load-theme 'zenburn t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Shell PATH setup
