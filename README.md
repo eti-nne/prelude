@@ -57,7 +57,7 @@ following:
 ## Additional bindings
 
 - `C-c z`: 'ff-find-other-file
-- `C-c d`: 'dash-at-point
+- `C-c SPACE`: 'dash-at-point
 - `C-x C-h m`: 'make-header
 - `C-x C-h c`: 'make-box-comment
 - `C-x C-h d`: 'make-divider

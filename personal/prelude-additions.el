@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Wed Mar 13 16:32:25 2013 (+0100)
+;; Last-Updated: Wed Mar 13 16:51:26 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 68
+;;     Update #: 77
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -93,6 +93,4 @@
 ;; Dash at point
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(when (eq system-type 'darwin)
-  (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
-  (global-set-key "\C-cd" 'dash-at-point))
+(global-set-key (kbd "C-c SPC") 'dash-at-point)

@@ -52,7 +52,7 @@
 (defvar dash-at-point-mode-alist
   '(
     (c-mode . "c")
-    (c++-mode . "cpp")
+    (c++-mode . "cc")
     (css-mode . "css")
     (emacs-lisp-mode . "elisp")
     (html-mode . "html")
@@ -85,9 +85,7 @@
     (read-from-minibuffer
      "Dash search: "
      (if (dash-at-point-guess-docset)
-	 (concat
-	  (dash-at-point-guess-docset) ":"
-	  (thing-at-point 'symbol))
+	  (thing-at-point 'symbol)
        (thing-at-point 'symbol))
      )))
 )
