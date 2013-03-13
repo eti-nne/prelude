@@ -54,7 +54,7 @@ ELPA (or MELPA).")
   "This folder houses additional yasnippet bundles added by the users.")
 (defvar prelude-savefile-dir (expand-file-name "savefile" prelude-dir)
   "This folder stores all the automatically generated save/history-files.")
-(defvar prelude-modules-file (expand-file-name "prelude-modules.el" prelude-dir)
+(defvar prelude-modules-file (expand-file-name "prelude-modules.el" prelude-personal-dir)
   "This files contains a list of modules that will be loaded by Prelude.")
 (defvar prelude-themes-dir (expand-file-name "themes" prelude-dir)
   "This folder houses additional themes distributed with Prelude.")
@@ -114,4 +114,3 @@ Emacs load path."
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
 ;;; init.el ends here
-

@@ -11,3 +11,5 @@
 (require 'prelude-ruby)
 (require 'prelude-scss)
 (require 'prelude-xml)
+(require 'prelude-git-gutter)
+(require 'prelude-dash-at-point)

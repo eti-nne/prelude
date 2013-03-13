@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Wed Mar  6 10:54:13 2013 (+0100)
+;; Last-Updated: Wed Mar 13 16:32:25 2013 (+0100)
 ;;           By: Julien Wintz
-;;     Update #: 43
+;;     Update #: 68
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -70,9 +70,29 @@
  (load-theme 'tango t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Shell PATH setup
+;; Git-Gutter
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(if (not (getenv "TERM_PROGRAM"))
-    (setenv "PATH"
-            (shell-command-to-string "source $HOME/.bash_profile && printf $PATH")))
+(global-git-gutter-mode t)
+
+(global-set-key (kbd "\C-x\C-gt") 'git-gutter:toggle)
+(global-set-key (kbd "\C-x\C-gd") 'git-gutter:popup-diff)
+(global-set-key (kbd "\C-x\C-gp") 'git-gutter:previous-hunk)
+(global-set-key (kbd "\C-x\C-gn") 'git-gutter:next-hunk)
+(global-set-key (kbd "\C-x\C-gr") 'git-gutter:revert-hunk)
+
+(setq git-gutter:modified-sign "%")
+(setq git-gutter:added-sign "+")
+(setq git-gutter:deleted-sign "-")
+
+(set-face-foreground 'git-gutter:modified "orange")
+(set-face-foreground 'git-gutter:added "green")
+(set-face-foreground 'git-gutter:deleted "red")
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Dash at point
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(when (eq system-type 'darwin)
+  (autoload 'dash-at-point "dash-at-point" "Search the word at point with Dash." t nil)
+  (global-set-key "\C-cd" 'dash-at-point))

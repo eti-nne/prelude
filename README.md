@@ -50,17 +50,21 @@ following:
 
 - modules/prelude-cmake provides cmake-mode
 - modules/prelude-ninja provides ninja-mode
-- modules/prelude-qml   privdes    qml-mode
+- modules/prelude-qml provides qml-mode
+- modules/prelude-git-gutter provides git-gutter-mode
+- modules/prelude-dash-at-point provides osx dash lookup
 
 ## Additional bindings
 
 - `C-c z`: 'ff-find-other-file
+- `C-c d`: 'dash-at-point
 - `C-x C-h m`: 'make-header
 - `C-x C-h c`: 'make-box-comment
 - `C-x C-h d`: 'make-divider
 - `C-x C-h r`: 'make-revision
 - `C-x C-h g`: 'update-file-header
-
-## Additional themes
-
-- themes/jwintz-theme.el: my very own fork of wombat
+- `C-x C-g t`: 'git-gutter:toggle
+- `C-x C-g d`: 'git-gutter:popup-diff
+- `C-x C-g p`: 'git-gutter:previous-hunk
+- `C-x C-g n`: 'git-gutter:next-hunk
+- `C-x C-g r`: 'git-gutter:revert-hunk
