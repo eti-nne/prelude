@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Wed Mar 13 16:51:26 2013 (+0100)
+;; Last-Updated: Wed Apr 17 10:30:25 2013 (+0200)
 ;;           By: Julien Wintz
-;;     Update #: 77
+;;     Update #: 78
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -68,6 +68,13 @@
 
 (when (display-graphic-p)
  (load-theme 'tango t))
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Visual bell
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(when (display-graphic-p)
+  (setq visible-bell t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Git-Gutter
