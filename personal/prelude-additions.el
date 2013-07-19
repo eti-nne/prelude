@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Wed Apr 17 10:30:25 2013 (+0200)
+;; Last-Updated: Fri Jul 19 15:12:10 2013 (+0200)
 ;;           By: Julien Wintz
-;;     Update #: 78
+;;     Update #: 79
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -67,7 +67,7 @@
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (when (display-graphic-p)
- (load-theme 'tango t))
+  (load-theme 'noctilux t))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Visual bell
