@@ -22,8 +22,6 @@ share my emacs experience.
 $ curl -L https://github.com/jwintz/prelude/raw/master/utils/installer.sh | sh
 ```
 
-You can now power up your Emacs, sit back and enjoy Prelude. Everything will be installed into ~/.emacs.d.
-
 ## Changes
 
 - init.el: Add prelude-themes-dir and add it to custom theme load path.
