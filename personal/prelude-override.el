@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:54 2013 (+0100)
 ;; Version:
-;; Last-Updated: Wed Mar 13 16:18:58 2013 (+0100)
+;; Last-Updated: Thu Jul 25 22:42:05 2013 (+0200)
 ;;           By: Julien Wintz
-;;     Update #: 23
+;;     Update #: 24
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -49,3 +49,9 @@
 
 (when (eq system-type 'darwin)
   (prelude-swap-meta-and-super))
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; C-a behavior
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(global-set-key [remap move-beginning-of-line] 'move-beginning-of-line)
