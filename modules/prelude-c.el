@@ -35,8 +35,7 @@
 (require 'prelude-programming)
 
 (defun prelude-c-mode-common-defaults ()
-  (setq c-basic-offset 4)
-  (c-set-offset 'substatement-open 0))
+  (setq c-basic-offset 4))
 
 (setq prelude-c-mode-common-hook 'prelude-c-mode-common-defaults)
 
@@ -46,7 +45,7 @@
                                 (run-hooks 'prelude-c-mode-common-hook)))
 
 (defun prelude-makefile-mode-defaults ()
-  (setq indent-tabs-mode t))
+  (setq indent-tabs-mode nil))
 
 (setq prelude-makefile-mode-hook 'prelude-makefile-mode-defaults)
 
