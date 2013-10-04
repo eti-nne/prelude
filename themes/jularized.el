@@ -1,15 +1,15 @@
 ;;; jularized.el ---
-;; 
+;;
 ;; Author: Julien Wintz
 ;; Created: Thu Oct  3 14:51:08 2013 (+0200)
-;; Version: 
-;; Last-Updated: Thu Oct  3 16:20:40 2013 (+0200)
+;; Version:
+;; Last-Updated: Fri Oct  4 11:07:51 2013 (+0200)
 ;;           By: Julien Wintz
-;;     Update #: 57
+;;     Update #: 63
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; 
+;;
 ;;; Change Log:
-;; 
+;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;; solarized.el --- Solarized for Emacs.
@@ -331,15 +331,19 @@ customize the resulting theme."
      `(minibuffer-prompt ((,class (:foreground ,jularized-fg))))
      `(mode-line
        ((,class (:inverse-video unspecified
-                                :underline unspecified
+                                ;; :underline unspecified
+                                :overline ,s-mode-line-inactive-bc
+                                :underline ,s-mode-line-inactive-bc
                                 :foreground ,s-mode-line-fg
                                 :background ,s-mode-line-bg))))
                                 ;; :box (:line-width 1 :color ,s-mode-line-bg :style unspecified)))))
-                                
+
      `(mode-line-buffer-id ((,class (:foreground ,s-mode-line-buffer-id-fg :weight bold))))
      `(mode-line-inactive
        ((,class (:inverse-video unspecified
-                                :underline unspecified
+                                ;; :underline unspecified
+                                :overline ,s-mode-line-inactive-bc
+                                :underline ,s-mode-line-inactive-bc
                                 :foreground ,s-mode-line-inactive-fg
                                 :background ,s-mode-line-inactive-bg))))
 
