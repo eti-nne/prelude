@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Fri Oct  4 13:39:58 2013 (+0200)
+;; Last-Updated: Sun Oct  6 01:10:18 2013 (+0200)
 ;;           By: Julien Wintz
-;;     Update #: 108
+;;     Update #: 137
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -134,4 +134,18 @@
 
 (desktop-save-mode 1)
 
-;;; prelude-additions.el ends here
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;Smooth scrolling and buffer map
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'sublimity)
+(require 'sublimity-scroll)
+(require 'sublimity-map)
+
+(sublimity-global-mode 1)
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Enabe company mode for all buffers
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(add-hook 'after-init-hook 'global-company-mode)

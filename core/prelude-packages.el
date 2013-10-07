@@ -47,7 +47,7 @@
     guru-mode helm helm-projectile ido-ubiquitous
     key-chord magit move-text rainbow-mode
     smartparens smex undo-tree
-    volatile-highlights)
+    volatile-highlights auto-complete company)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
