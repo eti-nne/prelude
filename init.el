@@ -80,6 +80,7 @@ by Prelude.")
 (add-to-list 'load-path prelude-modules-dir)
 (add-to-list 'load-path prelude-vendor-dir)
 (add-to-list 'load-path prelude-themes-dir)
+
 (prelude-add-subfolders-to-load-path prelude-vendor-dir)
 (add-to-list 'custom-theme-load-path prelude-themes-dir)
 
