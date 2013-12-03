@@ -3,9 +3,9 @@
 ;; Author: Julien Wintz
 ;; Created: Sun Jan 27 22:08:06 2013 (+0100)
 ;; Version:
-;; Last-Updated: Mon Oct  7 18:04:52 2013 (+0200)
-;;           By: Julien Wintz
-;;     Update #: 205
+;; Last-Updated: mar. déc.  3 00:17:33 2013 (+0100)
+;;           By: Etienne
+;;     Update #: 209
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;;; Change Log:
@@ -106,9 +106,9 @@
 ;; Transparent background
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(when (display-graphic-p)
-  (set-frame-parameter (selected-frame) 'alpha '(85 50))
-  (add-to-list 'default-frame-alist '(alpha 85 50)))
+;;(when (display-graphic-p)
+;;  (set-frame-parameter (selected-frame) 'alpha '(85 50))
+;;  (add-to-list 'default-frame-alist '(alpha 85 50)))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Non jerky mouse scrolling
@@ -132,28 +132,28 @@
 ;;Smooth scrolling and buffer map
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(when (display-graphic-p)
-  (require 'sublimity)
-  (require 'sublimity-scroll)
-  (require 'sublimity-map)
-  (setq sublimity-scroll-weight 10)
-  (setq sublimity-scroll-drift-length 5)
-  (add-hook 'c-mode-common-hook 'sublimity-global-mode))
+;; (when (display-graphic-p)
+;;   (require 'sublimity)
+;;   (require 'sublimity-scroll)
+;;   (require 'sublimity-map)
+;;  (setq sublimity-scroll-weight 10)
+;;  (setq sublimity-scroll-drift-length 5)
+;;  (add-hook 'c-mode-common-hook 'sublimity-global-mode))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Predictive mode
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(defvar prelude-predictive-dir (expand-file-name "predictive" prelude-dir))
+;;(defvar prelude-predictive-dir (expand-file-name "predictive" prelude-dir))
+;;
+;;(add-to-list 'load-path prelude-predictive-dir)
+;;
+;;(add-to-list 'load-path (expand-file-name "c" prelude-predictive-dir))
+;;(add-to-list 'load-path (expand-file-name "html" prelude-predictive-dir))
+;;(add-to-list 'load-path (expand-file-name "latex" prelude-predictive-dir))
+;;(add-to-list 'load-path (expand-file-name "misc" prelude-predictive-dir))
+;;(add-to-list 'load-path (expand-file-name "texinfo" prelude-predictive-dir))
+;;
+;;(require 'predictive)
 
-(add-to-list 'load-path prelude-predictive-dir)
-
-(add-to-list 'load-path (expand-file-name "c" prelude-predictive-dir))
-(add-to-list 'load-path (expand-file-name "html" prelude-predictive-dir))
-(add-to-list 'load-path (expand-file-name "latex" prelude-predictive-dir))
-(add-to-list 'load-path (expand-file-name "misc" prelude-predictive-dir))
-(add-to-list 'load-path (expand-file-name "texinfo" prelude-predictive-dir))
-
-(require 'predictive)
-
-(add-hook 'c-mode-common-hook 'turn-on-predictive-mode)
+;;(add-hook 'c-mode-common-hook 'turn-on-predictive-mode)
