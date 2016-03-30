@@ -20,3 +20,5 @@ projectile-bookmarks.eld
 session*
 .cask
 .emacs.desktop*
+tramp
+/var/pcache

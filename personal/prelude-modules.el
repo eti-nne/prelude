@@ -2,7 +2,6 @@
 (require 'prelude-cmake)
 (require 'prelude-css)
 (require 'prelude-js)
-(require 'prelude-markdown)
 (require 'prelude-ninja)
 (require 'prelude-org)
 (require 'prelude-perl)
